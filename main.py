@@ -57,7 +57,7 @@ while one_use():
 
     choose_action = input("1 - Choose currency, 2 - put money, 3 - Show balance \nyour choice? : ")
     if choose_action == "1":
-        choose_currency()
+        choose_currency(balance)
     elif choose_action == "2":
         balance = put_money(balance)
         show_balance()
