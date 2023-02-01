@@ -18,13 +18,13 @@ def choose_currency():
             print("your balance = ", balance, "usd")
         elif current_currency == "uah":
             balance = balance / 36.93
-            print("your balance = ", balance, "uah")
+            print("your balance = ", balance, "usd")
     if choose == "2":
         if current_currency == "uah":
             print("your balance = ", balance, "uah")
         elif current_currency == "usd":
             balance = balance * 36.93
-            print("your balance = ", balance, "usd")
+            print("your balance = ", balance, "uah")
 
 
 while one_use():
