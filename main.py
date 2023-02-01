@@ -31,7 +31,7 @@ while one_use():
     print('Действия пользователя')
 
     choose_action = input("1 - Choose currency")
-    if choose_currency == "1":
+    if choose_action == "1":
         choose_currency()
 
     def ShowBalance():
