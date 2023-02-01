@@ -24,12 +24,12 @@ def choose_currency():
     choose = input("Enter currency: (1 - usd / 2- uah)")
     if choose == "1":
         if current_currency == "uah":
-            balance = balance / 36.93
+            balance = round((balance / 36.93), 2)
         current_currency = "usd"
         show_balance()
     if choose == "2":
         if current_currency == "usd":
-            balance = balance * 36.93
+            balance = round((balance * 36.93), 2)
         current_currency = "uah"
         show_balance()
 
