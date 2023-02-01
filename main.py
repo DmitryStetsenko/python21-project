@@ -8,6 +8,7 @@ def one_use():
 
     return True
 
+
 def set_log(сhoice):
     if choice == '1':
         log.append("Choose currency")
@@ -21,4 +22,4 @@ def set_log(сhoice):
 
 while one_use():
     print('Действия пользователя')
-git set_log()
+    set_log(choose_action)
