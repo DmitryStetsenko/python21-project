@@ -27,3 +27,11 @@ def put_money(balance):
         return float(true_inp_user) + balance
     except TypeError:
         print('Ведите число!')
+
+
+def choose_currency(bal):
+    choose = input("Enter currency: (1 - usd / 2- eur)")
+    if choose == "1":
+        print(round((bal / 36.93), 2), "usd")
+    if choose == "2":
+        print(round((bal / 40.56), 2), "eur")
