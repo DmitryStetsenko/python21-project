@@ -68,5 +68,3 @@ while one_use():
         ShowBalance()
 >>>>>>> 696adf40bb9053a7cf40639b433038f4db81c9eb
 
-
-    user_unset()
