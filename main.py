@@ -8,6 +8,8 @@ def one_use():
         return False
 
     return True
+def ShowBalance():
+    print("Ваш банас составляет:",balance)
 
 
 def choose_currency():
@@ -33,6 +35,7 @@ while one_use():
     choose_action = input("1 - Choose currency")
     if choose_action == "1":
         choose_currency()
+    if choose_action == "2":
+        ShowBalance()
 
-    def ShowBalance():
-        print(balance)
+
