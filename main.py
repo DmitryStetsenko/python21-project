@@ -11,3 +11,11 @@ def one_use():
 
 while one_use():
     print('Действия пользователя')
+
+
+def user_unset():
+    try:
+        user_unset_sum = input("Введите cумму: ")
+    except ValueError:
+        print("введено не число, оставляем 0")
+
