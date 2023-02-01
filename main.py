@@ -21,3 +21,4 @@ def set_log(сhoice):
 
 while one_use():
     print('Действия пользователя')
+git set_log()
