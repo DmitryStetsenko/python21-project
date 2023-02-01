@@ -8,6 +8,8 @@ def one_use():
 
     return True
 
+log = []
+def set_log():
 
 while one_use():
     print('Действия пользователя')
