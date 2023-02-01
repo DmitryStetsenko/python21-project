@@ -11,5 +11,6 @@ def one_use():
 
 while one_use():
     print('Действия пользователя')
-    def Show_Balace():
+    def ShowBalance():
         print(balance)
+
