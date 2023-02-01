@@ -1,3 +1,5 @@
+from func import *
+
 balance = 5000
 current_currency = "uah"
 
@@ -30,9 +32,13 @@ def choose_currency():
 while one_use():
     print('Действия пользователя')
 
-    choose_action = input("1 - Choose currency")
+    choose_action = input("1 - Choose currency, 2 - put money \nyour choice? : ")
     if choose_action == "1":
         choose_currency()
+    elif choose_action == "2":
+        balance = put_money(balance)
+        print(f"your balance = {balance} UAH")
+
 
     def ShowBalance():
         print(balance)
