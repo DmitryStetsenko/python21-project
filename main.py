@@ -15,7 +15,7 @@ def one_use():
 
 
 def show_balance():
-    print("Ваш банас составляет:",balance)
+    print("Ваш банас составляет:",balance, current_currency)
 
 
 def choose_currency():
@@ -72,7 +72,7 @@ while one_use():
         balance = put_money(balance)
         print(f"your balance = {balance} UAH")
     elif choose_action == "3":
-        ShowBalance()
+        show_balance()
 
 
 
