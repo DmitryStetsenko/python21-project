@@ -1,6 +1,8 @@
 balance = 5000
 current_currency = "uah"
 
+log = []
+
 
 def one_use():
     user_answer = input('Продолжить работу?\ntype exit/press enter\n_')
@@ -29,6 +31,17 @@ def choose_currency():
             print("your balance = ", balance, "uah")
 
 
+def set_log(choose):
+    if choose == '1':
+        log.append("Choose currency")
+    elif choose == '2':
+        log.append("Show balance")
+    elif choose == '3':
+        log.append("Put money")
+    elif choose == '4':
+        log.append("Get money")
+
+
 while one_use():
     print('Действия пользователя')
 
@@ -38,4 +51,7 @@ while one_use():
     if choose_action == "2":
         ShowBalance()
 
+
+
+    set_log(choose_action)
 
