@@ -18,4 +18,6 @@ def user_unset():
         user_unset_sum = input("Введите cумму: ")
     except ValueError:
         print("введено не число, оставляем 0")
+        if user_unset_sum <= 0:
+            print("у вас нет столько денег")
 
