@@ -2,7 +2,6 @@ from func import *
 
 
 balance = 5000
-current_currency = "uah"
 log = []
 
 
@@ -15,23 +14,15 @@ def one_use():
 
 
 def show_balance():
-    print("Ваш банас составляет:",balance, current_currency)
+    print("Ваш банас составляет:", balance, "uah")
 
 
-def choose_currency():
-    global current_currency
-    global balance
-    choose = input("Enter currency: (1 - usd / 2- uah)")
+def choose_currency(bal):
+    choose = input("Enter currency: (1 - usd / 2- eur)")
     if choose == "1":
-        if current_currency == "uah":
-            balance = round((balance / 36.93), 2)
-        current_currency = "usd"
-        show_balance()
+        print(round((bal / 36.93), 2), "usd")
     if choose == "2":
-        if current_currency == "usd":
-            balance = round((balance * 36.93), 2)
-        current_currency = "uah"
-        show_balance()
+        print(round((bal / 40.56), 2), "eur")
 
 
 
