@@ -1,3 +1,6 @@
+from func import *
+
+
 balance = 5000
 current_currency = "uah"
 
@@ -31,13 +34,32 @@ def choose_currency():
             print("your balance = ", balance, "uah")
 
 
+
+def user_unset():
+    global balance
+    user_unset_sum = int(input("Введите cумму: "))
+
+    if user_unset_sum <= 0:
+        print("неверная сумма")
+    elif user_unset_sum > balance:
+        print("сумма привышает баланс")
+    else:
+        rest = balance - user_unset_sum
+        balance = rest
+
+        print('деньги успешно сняты \n' + str(balance))
+
+
 while one_use():
     print('Действия пользователя')
 
-    choose_action = input("1 - Choose currency \n2 - Show balance")
+    choose_action = input("1 - Choose currency, 2 - put money, 3 - Show balance \nyour choice? : ")
     if choose_action == "1":
         choose_currency()
     elif choose_action == "2":
+        balance = put_money(balance)
+        print(f"your balance = {balance} UAH")
+    elif choose_action == "3":
         show_balance()
 
 
