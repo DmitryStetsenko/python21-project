@@ -11,7 +11,7 @@ def one_use():
 
 
 def show_balance():
-    print("Ваш банас составляет:",balance)
+    print("Ваш банас составляет:",balance, current_currency)
 
 
 def choose_currency():
@@ -37,7 +37,7 @@ while one_use():
     choose_action = input("1 - Choose currency \n2 - Show balance")
     if choose_action == "1":
         choose_currency()
-    if choose_action == "2":
+    elif choose_action == "2":
         show_balance()
 
 
