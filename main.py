@@ -70,11 +70,9 @@ while one_use():
         choose_currency()
     elif choose_action == "2":
         balance = put_money(balance)
-        print(f"your balance = {balance} UAH")
+        show_balance()
     elif choose_action == "3":
         show_balance()
-
-
 
     set_log(choose_action)
 
