@@ -32,7 +32,7 @@ def choose_currency():
 while one_use():
     print('Действия пользователя')
 
-    choose_action = input("1 - Choose currency")
+    choose_action = input("1 - Choose currency \n2 - ShowBalance")
     if choose_action == "1":
         choose_currency()
     if choose_action == "2":
