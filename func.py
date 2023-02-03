@@ -111,10 +111,9 @@ def perform_action(action: str, balance):
     ]
 
     for dict_ in choose_list:
-        for value in dict_['id']:
-            if value == action:
-                set_log(f"{dict_['text']} | {datetime.datetime.now()}\n")
+        if dict_['id'] == action:
+            set_log(f"{dict_['text']} | {datetime.datetime.now()}\n")
 
-                return dict_['func'](balance)
+            return dict_['func'](balance)
 
     return "Команда введена не верно. Выберите команду со списка!"
